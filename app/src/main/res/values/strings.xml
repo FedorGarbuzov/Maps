@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Maps</string>
+    <string name="permission_unavailable">Permission unavailable</string>
+    <string name="add_marker_title">Add Marker</string>
+    <string name="new_marker_title">Title</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="cancel_button" tools:ignore="ButtonCase">CANCEL</string>
+    <string name="save_button">SAVE</string>
+    <string name="cancellation">The changes won\'t be saved, do you really want to log out?</string>
+    <string name="dialog_positive_button" translatable="false">OK</string>
+    <string name="dialog_negative_button" tools:ignore="ButtonCase">CANCEL</string>
+    <string name="error_saving">Saving failed. Try again later.</string>
+    <string name="error_loading">Loading failed. Try again later.</string>
+    <string name="want_to_visit">Want to visit</string>
+    <string name="permission_requied">Permission is required for correct functioning</string>
+    <string name="kremlin">The Moscow Kremlin</string>
+    <string name="marker">Marker</string>
+    <string name="your_palaces">Your places</string>
+</resources>

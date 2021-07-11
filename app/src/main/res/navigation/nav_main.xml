@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/mapsFragment">
+
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="ru.netology.maps.ui.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" >
+        <action
+            android:id="@+id/action_mapsFragment_to_addMarkerFragment"
+            app:destination="@id/addMarkerFragment" />
+        <action
+            android:id="@+id/action_mapsFragment_to_markersListFragment"
+            app:destination="@id/markersListFragment" />
+        <action
+            android:id="@+id/action_mapsFragment_to_markerFragment"
+            app:destination="@id/markerFragment" />
+        <action
+            android:id="@+id/action_mapsFragment_to_editMarkerFragment"
+            app:destination="@id/editMarkerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addMarkerFragment"
+        android:name="ru.netology.maps.ui.AddMarkerFragment"
+        android:label="AddMarkerFragment" />
+    <fragment
+        android:id="@+id/markersListFragment"
+        android:name="ru.netology.maps.ui.MarkersListFragment"
+        android:label="MarkersListFragment" >
+        <action
+            android:id="@+id/action_markersListFragment_to_addMarkerFragment"
+            app:destination="@id/addMarkerFragment" />
+        <action
+            android:id="@+id/action_markersListFragment_to_markerFragment"
+            app:destination="@id/markerFragment" />
+        <action
+            android:id="@+id/action_markersListFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/markerFragment"
+        android:name="ru.netology.maps.ui.MarkerFragment"
+        android:label="MarkerFragment" />
+    <fragment
+        android:id="@+id/editMarkerFragment"
+        android:name="ru.netology.maps.ui.EditMarkerFragment"
+        android:label="EditMarkerFragment" />
+</navigation>
